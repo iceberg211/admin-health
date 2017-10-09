@@ -1,0 +1,101 @@
+@import '../../themes/mimin.less';
+.sider {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  bottom: 0;
+  width: 220px;
+  border: none;
+  overflow: hidden;
+  z-index: 100;
+  min-height: ~"calc(100vh - 120px)";
+  background-color: @white;
+  padding-top: 60px;
+  color: @primary-color;
+  .title {
+    margin: 20px;
+    color: @blue
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-top: 1px solid #e9e9e9;
+  background-color: @gray;
+  z-index: 105;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  display: flex;
+  right: 0;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.24);
+  clear: both;
+  z-index: 102;
+  color: @white;
+  background-color: @blue;
+  .left {
+    padding-left: 120px;
+    display: inline-block;
+    flex: 1;
+    h2 {
+      color: @white;
+    }
+  }
+  .right {
+    flex: 2;
+    padding-right: 25px;
+    text-align: right;
+    .admin{
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .rightWarpper {
+      display: flex;
+      padding-right: 16px;
+      align-items: center;
+      float: right;
+      .button {
+        width: 64px;
+        height: 64px;
+        line-height: 64px;
+        text-align: center;
+        margin: 0 15px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: @transition-ease-in;
+        &:hover {
+          color: @blue;
+          background-color: fade(@white, 40%);
+        }
+      }
+      .menu {
+        flex: 1;
+        background-color: @blue;
+        color: @white;
+        &:hover {
+          color: @white;
+          background-color: fade(@blue, 20%);
+        }
+      }
+    }
+  }
+}
+
+.bread {
+  height: 64px;
+  line-height: 64px;
+  padding: 0 24px;
+  margin-bottom: -24px;
+}

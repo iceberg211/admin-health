@@ -1,0 +1,88 @@
+@import './default.less';
+@dark-half: #494949;
+@purple: #d897eb;
+@white: #ffffff;
+@gray: #f7f7f7;
+@blue: #108ee9;
+@fontColor: rgba(0, 0, 0, 0.65);
+@shadow-1: 4px 4px 20px 0 rgba(0, 0, 0, 0.01);
+@shadow-2: 4px 4px 40px 0 rgba(0, 0, 0, 0.05);
+@transition-ease-in: all 0.3s ease-out;
+@transition-ease-out: all 0.3s ease-out;
+@baseColor: #21b9c7;
+@primary-color: #21b9c7;
+@ease-in: ease-in;
+
+.text-overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.ant-menu-inline,
+.ant-menu-vertical {
+  border-right: none;
+}
+
+:global {
+  .ant-menu-inline .ant-menu-item,
+  .ant-menu-submenu-inline .ant-menu-submenu,
+  .ant-menu-submenu-title {
+    font-size: 14px !important;
+  }
+  .ant-table-thead>tr>th {
+    text-align: center;
+  }
+  .ant-table table {
+    text-align: center;
+  }
+  .ant-row {
+    margin-bottom: 15px;
+  }
+  .ant-form-item {
+    margin-bottom: 12px !important;
+  }
+  .ant-card-body .ant-card-body{
+    margin: 15px 0;
+  }
+  .ant-table-thead > tr > th{
+    text-align: center !important;
+  }
+  .ant-table table{
+    text-align: center !important;
+  }
+  .subButton {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  .ql-editor{
+      min-height: 200px;
+  }
+  .ant-menu-inline, .ant-menu-vertical{
+    border-right: none;
+  }
+}
+
+html,
+body,
+ :global(#root) {
+  height: 100%;
+}
